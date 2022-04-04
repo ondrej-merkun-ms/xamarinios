@@ -123,7 +123,7 @@ jobs:
           args: '/t:Rebuild '
           signMethod: id
           iosSigningIdentity: $(APPLE_CERTIFICATE_SIGNING_IDENTITY)
-          provProfileUuid: bdfb7ea5-ff35-4d1d-b680-f9c65fdf6eb3
+          provProfileUuid: $(MobileProvisionSecureFileId)
           buildTool: msbuild
       - task: CmdLine@1
         displayName: Making Output Folder
